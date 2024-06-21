@@ -1,4 +1,4 @@
-import { defaultValues } from "../config/config";
+import { defaultValues } from "../config/config.js";
 export async function handleInput(validInput, input, question, questionType, page){
     switch(questionType){
         case "MCQ": //MCQ, choose 1 
@@ -72,7 +72,7 @@ export async function handleInput(validInput, input, question, questionType, pag
             await optionsRanking[0].dragTo(optionsRanking[1]);
           }
           else{
-            const insertedElements : number[] = [];
+            const insertedElements = [];
             for(let j = 0; j<optionsRanking.length; j++){
                 input[j] = Number(input[j]);
                 let shift = 0;
