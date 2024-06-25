@@ -14,6 +14,17 @@ export const inputType = 1;
 
 export const link = "https://forms.office.com/pages/responsepage.aspx?id=Zyu7FNNMz0Klw6Y6r1JFrLUJEJ_rHpRNrWu3z2RigwVUOTdIQUlGVEhZNDkwT1JQTlMxTlJZUzYwWC4u";
 
-export const questionTypeList = ["MCQ","MRQ","DROPDOWN","OEQ","RATE","REC","DATE","RANK","LIKERT"];
+export const QUESTION_TYPES = {
+    MRQ: "MRQ",
+    MCQ: "MCQ",
+    DROPDOWN: "DROPDOWN",
+    OEQ:"OEQ",
+    RATE: "RATE",
+    REC: "REC",
+    DATE: "DATE",
+    RANK: "RANK",
+    LIKERT: "LIKERT",
+    UNKNOWN: "UNKNOWN",
+}
 
 export const delay = 1000;
