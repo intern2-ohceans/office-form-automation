@@ -1,8 +1,12 @@
 import * as fs from 'fs';
 import { parse } from 'csv-parse';
 
-export const readInput = async () => {
+//function to parse data from a csv file
+
+export async function readInput () {
+  console.log("Reading input...")
   const records = [];
+  //Read from input.csv and parse each row
   const parser = fs
     .createReadStream("input/input.csv")
     .pipe(parse({
