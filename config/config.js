@@ -12,7 +12,7 @@ export const defaultValues = {
 
 export const inputType = 1;
 
-export const link = "https://forms.office.com/pages/responsepage.aspx?id=Zyu7FNNMz0Klw6Y6r1JFrLUJEJ_rHpRNrWu3z2RigwVUOTdIQUlGVEhZNDkwT1JQTlMxTlJZUzYwWC4u";
+export const link = "https://forms.office.com/r/LX6Jaa4gN9";
 
 export const QUESTION_TYPES = {
     MRQ: "MRQ",

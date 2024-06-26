@@ -67,7 +67,7 @@ import { readInput } from './utils/readInput.js';
 
   //submit the form
   console.log("Submitting form...");
-
+  await page.locator('[data-automation-id="submitButton"]').click();
   //cleanup
   await browser.close();
   console.log("Closing form...");

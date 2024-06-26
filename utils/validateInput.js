@@ -3,9 +3,6 @@ import { QUESTION_TYPES } from "../config/config.js";
 //function to check if input type is correct with regard to the question
 
 export async function validateInput( input, question, questionType) {
-    if(typeof(input) != String){
-        throw "invalid input";
-      }
     let isRequired = await question.locator('[data-automation-id="requiredStar"]').first().isVisible();
     //return false if question is required but input is empty
     if(isRequired && !input){
